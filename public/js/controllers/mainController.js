@@ -1,6 +1,6 @@
 // MAIN CONTROLLER
 function mainController($scope, listVilleService) {
-  $scope.title = "Marinette";
+  $scope.title = "Marinette is AWESOME!!!!";
   $scope.villes = [
     {nom: "Biarritz", video: "https://www.youtube.com/embed/SblTNCEnhIw"},
     {nom: "Donostia", video: "https://player.vimeo.com/video/142316610"},
