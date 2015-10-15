@@ -2,7 +2,7 @@
 function mainController($scope, listVilleService) {
   $scope.title = "Marinette is AWESOME!!!!";
   $scope.villes = [
-    {nom: "Biarritz", video: "https://www.youtube.com/embed/SblTNCEnhIw"},
+    {nom: "Biarritz", video: "https://www.youtube.com/embed/SblTNCEnhIw?autoplay=1"},
     {nom: "Donostia", video: "https://player.vimeo.com/video/142316610"},
     {nom: "Lekeitio", video: "https://www.youtube.com/embed/SblTNCEnhIw"},
     {nom: "Orio", video: "https://www.youtube.com/embed/SblTNCEnhIw"},
@@ -37,17 +37,17 @@ function mainController($scope, listVilleService) {
     });
 
   }
-  
+
   function getInfos(ville){
-   listVilleService.getWeather(ville.nom).then(function(response){
+    listVilleService.getWeather(ville.nom).then(function(response){
       data = response.data;
       $scope.temp = Math.round(data.main.temp);
       $scope.meteo = data.weather[0].main;
+      $scope.wind = data.wind.speed;
       image.src = "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
       video.src =  ville.video;
       initialize();
       $scope.myValue = true;
-      console.log(response);
     }, function(){
       console.log('error'); 
     });
