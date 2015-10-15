@@ -1,8 +1,34 @@
-body{
-    padding-top: 40px;
+html {
+	font-size: 62.5%;
+}
+
+body {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	background: url(http://img13.deviantart.net/0d85/i/2011/274/4/2/basque_country_grunge_flag_by_elthalen-d4bge4c.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	font-size: 5rem;
+}
+
+label {
+	font-size: 2rem;
+}
+
+img {
+	width: 8%;
+}
+
+.container {
+	background: rgba(190, 190, 190, 0.6);	
+	padding-bottom: 20px;
+	color: black;
+	font-size: 3rem;
 }
 
 .mgtop {
 	margin-top: 2%;
 }
-	

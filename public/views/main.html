@@ -1,10 +1,10 @@
 <h1 class="text-center">{{title}}</h1>
 <p class="text-center">
-	Ce site mega-genial, vive le pays basque!
+	Ce site est mega-genial, vive le pays basque!
 </p>
 
-<div class="form-group">
-  <label for="sel1">Select city:</label>
+<div class="form-group text-center">
+  <label class="text-center" for="sel1">Choisissez une ville du beau pays basque:</label>
   <select class="form-control" id="sel1" ng-model="selectedNameVille" ng-change="change()" name="ville">
     <option ng-repeat="ville in villes | orderBy : 'nom'" value="{{ville.nom}}" >{{ville.nom}}</option>
   </select>
