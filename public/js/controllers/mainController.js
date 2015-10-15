@@ -3,7 +3,7 @@ function mainController($scope, listVilleService) {
   $scope.title = "Marinette";
   $scope.villes = [
     {nom: "Biarritz", video: "https://www.youtube.com/embed/SblTNCEnhIw"},
-    {nom: "Donostia", video: "https://www.youtube.com/embed/SblTNCEnhIw"},
+    {nom: "Donostia", video: "https://player.vimeo.com/video/142316610"},
     {nom: "Lekeitio", video: "https://www.youtube.com/embed/SblTNCEnhIw"},
     {nom: "Orio", video: "https://www.youtube.com/embed/SblTNCEnhIw"},
     {nom: "Mundaka", video: "https://www.youtube.com/embed/SblTNCEnhIw"},
