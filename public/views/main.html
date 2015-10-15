@@ -5,20 +5,14 @@
 
 <div class="form-group">
   <label for="sel1">Select city:</label>
-  <select class="form-control" id="sel1" ng-model="ville" ng-change="change()" name="ville">
-    <option>Biarritz</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
+  <select class="form-control" id="sel1" ng-model="selectedNameVille" ng-change="change()" name="ville">
+    <option ng-repeat="ville in villes | orderBy : 'nom'" value="{{ville.nom}}" >{{ville.nom}}</option>
   </select>
 </div>
-
 <div id="openweathermap" ng-show="myValue">
-	{{temp}}°C
-	<img src="" class='image'>
-</div>
-<div id="openshom">
-
+	<p>A  {{selectedVille.nom}} il fait : {{temp}}°C <img src="" class='image'></p>
+	<p>Ici vous pourrez rencontrer :</p>
+	<iframe class="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
 </div>
 <div id="googlemap">
   <div id="googleMap" style="width:500px;height:380px;"></div>
