@@ -1,19 +1,21 @@
 <h1 class="text-center">{{title}}</h1>
 <p class="text-center">
-	Ce site est mega-genial, vive le pays basque!
+  Ce site est mega-genial, vive le pays basque!
 </p>
 
-<div class="form-group text-center">
+<div class="col-md-4"></div>
+<div class="form-group text-center col-md-4">
   <label class="text-center" for="sel1">Choisissez une ville du beau pays basque:</label>
   <select class="form-control" id="sel1" ng-model="selectedNameVille" ng-change="change()" name="ville">
     <option ng-repeat="ville in villes | orderBy : 'nom'" value="{{ville.nom}}" >{{ville.nom}}</option>
   </select>
 </div>
-<div class="center-block" id="openweathermap" ng-show="myValue">
-	<p class="text-center">A  {{selectedVille.nom}} il fait : {{temp}}°C <img src="" class='image'></p>
-	<p class="text-center">Ici vous pourrez rencontrer :</p>
-	<iframe class="video center-block mgtop" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+<div class="col-md-4"></div>
+<div class="center-block col-md-12" id="openweathermap" ng-show="myValue">
+  <p class="text-center">A  {{selectedVille.nom}} il fait : {{temp}}°C <img src="" class='image'></p>
+  <p class="text-center">Ici vous pourrez rencontrer :</p>
+  <iframe class="video center-block mgtop" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
 </div>
 <div id="googlemap">
-  <div class="center-block mgtop" id="googleMap" style="width:900px;height:380px;"></div>
+  <div class="center-block" id="googleMap" style="width:900px;height:380px;"></div>
 </div>
