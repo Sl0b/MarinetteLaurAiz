@@ -15,5 +15,3 @@ angular.module('app', ['ngRoute'])
     .service('listVilleService', listVilleService)
     /*.factory('', )*/
     //.run(run);
-
-
