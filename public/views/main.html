@@ -1,5 +1,5 @@
-<h1 class="">{{title}}</h1>
-<p>
+<h1 class="text-center">{{title}}</h1>
+<p class="text-center">
 	dfdsfsdfsdfsd
 </p>
 
@@ -9,11 +9,11 @@
     <option ng-repeat="ville in villes | orderBy : 'nom'" value="{{ville.nom}}" >{{ville.nom}}</option>
   </select>
 </div>
-<div id="openweathermap" ng-show="myValue">
-	<p>A  {{selectedVille.nom}} il fait : {{temp}}°C <img src="" class='image'></p>
-	<p>Ici vous pourrez rencontrer :</p>
-	<iframe class="video" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+<div class="center-block" id="openweathermap" ng-show="myValue">
+	<p class="text-center">A  {{selectedVille.nom}} il fait : {{temp}}°C <img src="" class='image'></p>
+	<p class="text-center">Ici vous pourrez rencontrer :</p>
+	<iframe class="video center-block mgtop" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
 </div>
 <div id="googlemap">
-  <div id="googleMap" style="width:500px;height:380px;"></div>
+  <div class="center-block mgtop" id="googleMap" style="width:900px;height:380px;"></div>
 </div>

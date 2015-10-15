@@ -1,15 +1,8 @@
 body{
-    padding-top: 70px;
+    padding-top: 40px;
 }
 
-.navbar-border{
-	border-bottom: 3px solid #F0DB4F;
+.mgtop {
+	margin-top: 2%;
 }
-
-.navbar-header img{
-	transition: 0.4s;
-}
-
-.navbar-header img:hover{
-	transform: rotate(360deg);
-}  
+	
